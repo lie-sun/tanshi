@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/illustrate/illustrate",
+    "pages/log/log",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/authorize/authorize",
+    "pages/player/player",
+    "pages/unLog/unLog",
+    "pages/myauthorize/myauthorize",
+    "pages/medicalDetail/medicalDetail",
+    "pages/pay/pay",
+    "pages/phoneLog/phoneLog",
+    "pages/medicalOrder/medicalOrder",
+    "pages/buylist/buylist",
+    "pages/wxLog/wxLog"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "list": [{
+        "selectedIconPath": "images/3.png",
+        "iconPath": "images/33.png",
+        "pagePath": "pages/illustrate/illustrate",
+        "text": "说明"
+      },
+      {
+        "selectedIconPath": "images/1.png",
+        "iconPath": "images/11.png",
+        "pagePath": "pages/player/player",
+        "text": "探视"
+      },
+      {
+        "selectedIconPath": "images/2.png",
+        "iconPath": "images/22.png",
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

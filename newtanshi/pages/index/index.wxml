@@ -1,0 +1,56 @@
+<!-- index.wxml -->
+<view wx:if="{{!isDisable401}}">
+    <view class="weui-panel__bd index-panel-header1">
+        <view class="index-click-btn-wrap1">
+            <navigator url="../log/log" open-type='redirect'>
+                <view class="index-click-wrap1">点击登录/注册</view>
+            </navigator>
+        </view>
+    </view>
+    <view class="unlog-text-wrap">
+        <text class="unlog-text">请先登录再进入我的页面</text>
+    </view>
+</view>
+<view wx:if="{{isDisable401}}">
+    <view class="weui-panel__bd index-panel-header">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                <!-- <image class="weui-media-box__thumb" src="{{userInfo.avatarUrl}}" /> -->
+                <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title index-panel-title">
+                    <!-- {{userInfo.nickName}} -->
+                    <open-data type="userNickName"></open-data>
+                    <!-- <text class="family-text-tip" wx:if="{{familyFlag==0}}">家长</text><text class="family-text-tip" wx:if="{{familyFlag==1}}">家属</text> -->
+                </view>
+            </view>
+        </navigator>
+        <!-- <view class="index-click-btn-wrap">
+            <view class="index-click-wrap">点击登录/注册</view>
+            </view> -->
+    </view>
+    <view class="weui-cells weui-cells_after-title index-cell-wrap" bindtap="bindButtonAuth">
+        <view class="weui-cell weui-cell_access">
+            <view class="weui-cell__bd index-cell-text">授权管理</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access index-cell-access" style="font-size: 0"></view>
+        </view>
+    </view>
+    <navigator url="../buylist/buylist" open-type="navigate">
+        <view class="weui-cells weui-cells_after-title index-cell-wrap">
+            <view class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd index-cell-text">购买记录</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access index-cell-access" style="font-size: 0"></view>
+            </view>
+        </view>
+    </navigator>
+    <navigator url="../medicalOrder/medicalOrder" open-type="navigate">
+        <view class="weui-cells weui-cells_after-title index-cell-wrap">
+            <view class="weui-cell weui-cell_access pot">
+                <view class="weui-cell__bd index-cell-text">温馨提示</view>
+                <view class="red" wx:if='{{isShow==1}}'></view>
+                <view class="weui-cell__ft weui-cell__ft_in-access index-cell-access" style="font-size: 0"></view>
+            </view>
+        </view>
+    </navigator>
+</view>

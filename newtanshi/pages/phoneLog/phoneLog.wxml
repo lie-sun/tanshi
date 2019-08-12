@@ -1,0 +1,30 @@
+
+<!--手机登录-->
+<view class="weui-cell weui-cell_input weui-cell_vcode auth-phone-wrap">
+    <view class="weui-cell__hd">
+        <view class="weui-label auth-phone">手机号：</view>
+    </view>
+    <view class="weui-cell__bd">
+        <input class="weui-input auth-phone-input" placeholder="请输入手机号" bindinput ="mobileInput"/>
+    </view>
+</view>
+<view class="weui-cell weui-cell_input weui-cell_vcode auth-phone-wrap">
+    <view class="weui-cell__hd">
+        <view class="weui-label auth-phone">验证码：</view>
+    </view>
+    <view class="weui-cell__bd">
+        <input class="weui-input auth-phone-input" placeholder="验证码" bindinput ="validInput"/>
+    </view>
+    <button class="weui-cell__ft auth-phone-valid" disabled="{{vilidBtnDisable}}" bindtap="bindButtonTapGetValidCode">
+                    {{validMsg}}
+                </button>
+</view>
+
+<view class="valid-error" wx:if="{{isShowTip}}">{{tipMsg}}</view>
+
+ <view class="weui-btn-area">
+            <!--<button class="button auth-log-btn-area" disabled="{{logBtnDisable}}" open-type="getUserInfo" bindgetuserinfo='bindGetUserInfoLog'>登录</button>-->
+            <button class="button auth-log-btn-area" disabled="{{logBtnDisable}}" bindtap='bindGetUserInfoLog'>登录</button>
+
+        </view>
+

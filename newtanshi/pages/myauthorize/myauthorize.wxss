@@ -1,0 +1,46 @@
+.myauth-title {
+  background: #f0f0f0;
+  font-size: 30rpx;
+  color: #f568a9;
+  font-weight: bold;
+  padding: 4px 12px;
+}
+
+.myauth-phone-wrap {
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.myauth-phone {
+  float: left;
+  font-size: 32rpx;
+  width: 400rpx;
+}
+.myauth-phone-text {
+  font-size: 28rpx;
+  color: #555;
+  margin-left: 20px;
+  
+}
+.myauth-close {
+  float: right;
+  font-size: 60rpx;
+  line-height: 70rpx;
+}
+
+.myauth-vedio-btn{
+  float: right;
+  font-size: 26rpx;
+  height: 26x;
+  line-height: 26px;
+  background: #f568a9;
+  padding: 0 12px;
+  margin-top: 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+.myauth-text{
+  display: inline-block;
+  font-size: 32rpx;
+}

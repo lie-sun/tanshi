@@ -1,0 +1,9 @@
+<view class="containers">
+    <view class="li no">床位号：{{no}}</view>
+    <view class="li name">妈妈姓名：{{name}}</view>
+    <view class="li phone">手机号：{{phone}}</view>
+    <view class="content">{{content}}</view>
+
+   <view class="rr time">{{time}}</view>
+   <view class="rr hospital">{{hospitalname}}</view>
+</view>

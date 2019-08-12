@@ -1,0 +1,239 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.5",
+	"appid": "wxb6f0a37456dc20be",
+	"projectname": "applet_live_demo",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 27,
+			"list": [
+				{
+					"id": -1,
+					"name": "illustrate",
+					"pathName": "pages/illustrate/illustrate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "player",
+					"pathName": "pages/player/player",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "authorize",
+					"pathName": "pages/authorize/authorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "unlog",
+					"pathName": "pages/unLog/unLog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "log",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "log",
+					"pathName": "pages/log/log",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "buylist",
+					"pathName": "pages/buylist/buylist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myauthorize",
+					"pathName": "pages/myauthorize/myauthorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "pages/pay/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "phoneLog",
+					"pathName": "pages/phoneLog/phoneLog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "phoneLog",
+					"pathName": "pages/phoneLog/phoneLog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "phoneLog",
+					"pathName": "pages/phoneLog/phoneLog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "player",
+					"pathName": "pages/player/player",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "pages/pay/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/log/log",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "authorize",
+					"pathName": "pages/authorize/authorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "phoneLog",
+					"pathName": "pages/phoneLog/phoneLog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "buylist",
+					"pathName": "pages/buylist/buylist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "log",
+					"pathName": "pages/log/log",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "illustrate",
+					"pathName": "pages/illustrate/illustrate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "illustrate",
+					"pathName": "pages/illustrate/illustrate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "player",
+					"pathName": "pages/player/player",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "unlog",
+					"pathName": "pages/unLog/unLog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myauthorize",
+					"pathName": "pages/myauthorize/myauthorize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myauthorize",
+					"pathName": "pages/myauthorize/myauthorize",
+					"scene": null
+				}
+			]
+		}
+	}
+}

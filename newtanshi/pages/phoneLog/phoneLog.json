@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "登录",
+  "pages": [
+    "push/push"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f568a9",
+    "navigationBarTitleText": "登录",
+    "navigationBarTextStyle": "white"
+  }
+}

@@ -1,0 +1,11 @@
+<view class="illustrate-content-wrap">
+   <view class="illustrate-header-wrap">
+     <view class="illustrate-header-tittle">支付选择</view>
+    </view>
+    <view class="pay-wrap">￥ {{money}}</view>
+    <view class="pay-tip-wrap">请在付费后30分钟内观看，观看次数不限</view>
+    <view class="log-list-item-wrap">
+    <view class="log-list-item active-item" bindtap="bindPayBtn">支付</view>
+    <view class="log-list-item" bindtap="bindCannelBtn">取消</view>
+    </view>
+</view>

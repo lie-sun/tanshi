@@ -1,0 +1,31 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.usermotto-wrap{
+  width: 100%;
+  margin: 50px 10px 0 10px;
+}
+
+.usermotto {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.auth-log-btn-area {
+  background: #f568a9;
+  color: #fff;
+  font-size: 34rpx;
+}

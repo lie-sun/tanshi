@@ -1,0 +1,18 @@
+<view class="illustrate-content-wrap">
+   <view class="illustrate-header-wrap">
+   <view class="back-btn-wrap" bindtap='backClick'> <text class="back-btn">  </text> </view>
+    
+     <view class="illustrate-header-tittle">智能母婴平台</view>
+    </view>
+    <view class="log-list-item-wrap">
+    <button class="log-list-item active-item" open-type="getUserInfo" bindgetuserinfo='bindGetUserInfo'>微信登录</button>
+    
+    <button class="log-list-item active-item" open-type="getUserInfo" bindgetuserinfo='bindGetUserInfoPhone'>手机号码登录</button>
+       <!--<view class="log-list-item">手机号码登录</view>-->
+    
+    </view>
+    <view class="tips"><text>1、首次使用该系统请使用手机登录。</text><text>2、后续再次使用该系统直接微信登录即可。</text> </view>
+   
+</view>
+
+

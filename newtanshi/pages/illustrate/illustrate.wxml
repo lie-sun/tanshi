@@ -1,0 +1,42 @@
+<view class="illustrate-content-wrap">
+    <!-- <view class="illustrate-header-wrap">
+     <view class="illustrate-header-tittle">探视摄像头使用流程</view>
+     <view class="weui-flex ill-fex-wrap">
+            <view class="weui-flex__item">
+            <view class="placeholder">
+                <view class="ill-fex-num">1</view>
+                <view class="ill-flex-text">首次使用先登录</view>
+            </view>
+            </view>
+            <view class="weui-flex__item">
+            <view class="placeholder ill-flex-line-wrap">
+            <view class="ill-flex-line"></view>
+             <view class="weui-cell__ft weui-cell__ft_in-access ill-flex-row"></view>  
+            </view>  
+            </view>
+            <view class="weui-flex__item"><view class="placeholder">
+                <view class="ill-fex-num">2</view>
+                <view class="ill-flex-text">探视宝宝</view>
+                </view>
+                </view>
+        </view>
+   </view> -->
+    <view class="container-user">
+        <view class="userinfo">
+            <image class="userinfo-avatar" src="../../images/index.png" mode="cover"></image>
+        </view>
+    </view>
+    <view class="illustrate-wrap">
+        <view class="ill-header-tittle">新生儿远程探视</view>
+        <view>
+            <view>
+                <rich-text nodes=" {{content}}" class="rich-wrap"></rich-text>
+            </view>
+            <!-- <view class="ill-content-wrap">
+     <view class="ill-content">此服务可以帮助您通过手机视频观察宝宝在病房的状态。旨在方便您远程了解宝宝的最新情况。</view>
+     <view class="ill-content">新生儿家长请向主管护士申请开通。开通后，即可远程探视宝宝，也可以授权其他亲友远程探视宝宝。</view>
+     <view class="ill-content">本探视系统为有偿服务，微信支付20元可在30分钟内不限次数使用。</view> -->
+            <!-- </view> -->
+        </view>
+    </view>
+</view>

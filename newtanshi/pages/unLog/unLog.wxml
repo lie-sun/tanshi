@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="weui-panel__bd index-panel-header">
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/index.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title index-panel-title">admin</view>
+                    </view>
+                </navigator>
+            </view>
+
+            <view class="weui-cells weui-cells_after-title index-cell-wrap">
+              <view class="weui-cell weui-cell_access">
+                  <view class="weui-cell__bd index-cell-text">授权管理</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access index-cell-access" style="font-size: 0">
+                  </view>
+              </view>
+          </view>
+        <view class="weui-cells weui-cells_after-title index-cell-wrap">
+              <view class="weui-cell weui-cell_access">
+                  <view class="weui-cell__bd index-cell-text">购买记录</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access index-cell-access" style="font-size: 0">
+                  </view>
+              </view>
+          </view>

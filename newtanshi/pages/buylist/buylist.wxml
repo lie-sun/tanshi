@@ -1,0 +1,59 @@
+<view class="buy-list-wrap" wx:for="{{buyListArray}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+  <view class="buy-list-phone-wrap">
+    <view class="buy-phone">手机号：{{item.mobile}}</view>
+    <view class="buy-money">￥{{item.money/100}}</view>
+  </view>
+  <view class="buy-common">床位号：{{item.bedNo}}</view>
+  <view class="buy-common">播放有效期：{{item.newStart}} —— {{item.newEnd}}</view>
+  <view class="back-btn" bindtap="openConfirm" data-id="{{item}}" wx:if="{{item.refundStatus==null&&item.purchaseFlag==0}}">申请退款</view>
+  
+  <view class="back-btn back-btn-color" wx:if="{{item.refundStatus==0}}">退款中</view>
+  <view class="back-btn back-btn-color" wx:if="{{item.refundStatus==1}}">退款成功</view>
+  <view class="back-btn back-btn-color" wx:if="{{item.refundStatus==2}}">退款失败</view>
+  <view class="back-btn back-btn-color back-btn-disable" wx:if="{{item.refundStatus!=1&&item.refundStatus!=2&&item.refundStatus!=0&&item.purchaseFlag==1}}">申请退款</view>
+</view>
+<view class="weui-loadmore weui-loadmore-wrap" wx:if="{{isLoading}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+<!--退款申请-->
+<view class='toast-box' wx:if="{{isShowDrawback}}">
+    <view class='toastbg'></view>
+    <view class='showToast'>
+        <view class='toast-title'>
+            <view class="toast-money"><text>退款金额</text><text class="money-color"> ￥{{money/100}}</text></view>
+            <view class="toast-close" bindtap="closeDrawback">×</view>
+        </view>
+        <view class="toast-title toast-two">
+            <view class="toast-money"><text>退款原因</text></view>
+        </view>
+        <view class='toast-main'>
+            <view class='toast-input'>
+                <textarea rows="2" cols="20" placeholder='请输入退款原因......' bindinput ="resonInput"></textarea>
+            </view>
+        </view>
+        <view class='toast-button'>
+            <view class='button1'>
+                <button catchtap='applicationDrawback'>申请退款</button>
+            </view>
+        </view>
+    </view>
+</view>
+<!--退款中-->
+<view class='toast-box' hidden='{{isShowTip}}'>
+    <view class='toastbg'></view>
+    <view class='showToast'>
+        <view class='toast-title toast-tip-title-wrap'>
+            <view class="toast-tip-title-no-float"><text class="toast-tip-title">温馨提示</text></view>
+            <view class="toast-tip-close" catchtap='tipClose'>×</view>
+        </view>
+        <view class="toast-title toast-two toast-tip-content">
+            <view class="toast-money">退款请求正在处理，请耐心等待。</view>
+        </view>
+        <view class='toast-button toast-tip-button-wrap'>
+            <view class='button1'>
+                <button catchtap='tipCancel'>知道了</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,41 @@
+
+
+.auth-phone-wrap {
+  border-bottom: 1px solid #f0f0f0;
+}
+.auth-phone {
+  width: 160rpx;
+  font-size: 30rpx;
+  color: #f568a9;
+}
+.auth-phone-wrap:before {
+  border-top: none;
+}
+.auth-phone-input {
+  font-size: 30rpx;
+  color: #808080;
+}
+.auth-phone-valid {
+  font-size: 30rpx;
+  color: #f568a9;
+  border: 1px solid #f568a9;
+  border-radius: 20px;
+  margin-right: 10px;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.button-hover[type=primary]{
+ background: #f568a9;
+}
+.auth-log-btn-area {
+  background: #f568a9;
+  color: #fff;
+  font-size: 34rpx;
+}
+.valid-error {
+  color: #f568a9;
+  font-size: 30rpx;
+  text-align: center;
+  margin-top:10px;
+}

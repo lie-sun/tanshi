@@ -1,0 +1,177 @@
+ page {
+  background-color: #f0f0f0;
+} 
+
+.buy-list-wrap {
+  margin: 8px 12px 0 12px;
+  padding: 10px 10px 40px 10px;
+  background: #fff;
+  
+}
+
+.buy-list-phone-wrap{
+  clear: both;
+  display: block;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.buy-phone {
+  font-size: 34rpx;
+}
+
+.buy-phone {
+  float: left;
+}
+.buy-money {
+  float: right;
+  color: #f568a9;
+}
+.buy-common {
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 6px;
+}
+.back-btn {
+  float: right;
+  display: inline-block;
+  text-align: center;
+  font-size: 28rpx;
+  border: 1px solid #f0f0f0;
+  margin-top: 6px;
+  padding: 0 8px;
+  border-radius: 2px;
+  color: #f568a9;
+}
+
+
+
+
+.toast-box {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+ 
+.toastbg {
+    opacity: 0.2;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+}
+ 
+.showToast {
+    position: absolute;
+    background: #fff;
+    opacity: 1;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 40%;
+}
+ 
+.toast-title {
+    background-color: #fff;
+    color: #000;
+    padding: 20rpx;
+}
+ 
+.toast-main {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: white;
+    text-align: left;
+}
+ 
+.toast-input {
+    border: 1px solid #ddd;
+    margin: 0 20rpx;
+    padding: 10rpx;
+    font-size: 30rpx;
+}
+ 
+.toast-button {
+    display: flex;
+}
+ 
+.button1 {
+    width: 100%;
+}
+ 
+.button1 button {
+    width: 100%;
+    background-color: white;
+    color: #f568a9;
+    border-radius: 0;
+}
+ 
+.picker {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.toast-title{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.toast-money{
+  float: left;
+  font-size: 34rpx;
+}
+
+.money-color{
+  color: #f568a9;
+}
+
+.toast-close {
+  float: right;
+  font-size: 50rpx;
+}
+
+.toast-tip-title-no-float{
+
+}
+
+.toast-two{
+  padding:0 20rpx;
+  margin-top: 0;
+}
+
+.toast-tip-title-wrap{
+  text-align: center;
+  font-size: 36rpx;
+  position: relative;
+}
+
+.toast-tip-title {
+  color:#f568a9;
+  margin-bottom: 50rpx;
+}
+
+.toast-tip-content {
+ text-align: center;
+ color: #999;
+ margin-left:70rpx;
+}
+
+.toast-tip-button-wrap {
+  padding-top: 40rpx;
+}
+
+.toast-tip-close {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  font-size: 50rpx;
+}
+
+.back-btn-color{
+  color: #333;
+}
+.back-btn-disable{
+  color: #777;
+}

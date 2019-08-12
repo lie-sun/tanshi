@@ -1,0 +1,117 @@
+<view wx:if="{{!isDisable401}}">
+  <view class="weui-panel__bd index-panel-header">
+    <view class="index-click-btn-wrap">
+      <navigator url="../log/log" open-type='redirect'>
+        <view class="index-click-wrap">点击登录/注册</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="unlog-text-wrap">
+    <text class="unlog-text">请先登录再进入探视页面</text>
+  </view>
+</view>
+<view class="page-body" wx:if="{{isDisable401}}">
+  <view class="page-header-wrap" wx:if="{{vedioLiveInfo.vedioType != -1}}">
+    <text class="page-header-left">{{hospitalInfo[index].hospitalName}}</text>
+    <view class="page-header-rignt-wrap">
+      <view class="page-header-rignt-position-wrap">
+        <view class="page__bd custom-select-wrap">
+          <view class="weui-btn-area custom-select-btn-area">
+            <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{bedArray}}">
+                <button type="default" class="custom-select-btn">{{bedArray[index]}}</button>
+                <view class="triangle-down"></view>  
+            </picker> -->
+            <picker bindchange="bindPickerChange" value="{{index}}" range-key="{{'bedNo'}}" range="{{hospitalInfo}}">
+              <button type="default" class="custom-select-btn">
+                {{hospitalInfo[index].bedNo}}
+              </button>
+              <view class="triangle-down"></view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 没点声明前 -->
+  <view class="no-statement" wx:if="{{vedioLiveInfo.vedioType == 0 && !isVedio&&!overTime}}">
+    <text>播放前请先勾选免责声明</text>
+  </view>
+  <!-- 超出探视时间 -->
+  <view class="no-statement" wx:if="{{overTime}}">
+    <text>超出探视时间</text>
+  </view>
+  <view class="page-section tc">
+    <view class="section tc self-video-wrap" wx:if="{{vedioLiveInfo.vedioType == 0 && isVedio && hospitalInfo[index].visitFlag==0&&!overTime}}">
+      <!-- <view class="logo-img"> <image src='../../images/logo1.png'></image> </view> -->
+
+      <!-- 加载圈自定义 -->
+      <view class="weui-loadmore weui-loadmore-wrap" wx:if="{{!isLoading}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+      </view>
+
+      <video id="myVideo" src="{{vedioLiveInfo.live.liveAddress}}" controls autoplay danmu-list="{{danmuList}}" enable-danmu muted style="height:230px;width:100%" danmu-btn show-center-play-btn bindwaiting="bindwaitingFn" bindtimeupdate="bindtimeupdateFn"
+        bindplay="bindplayFn"></video>
+    </view>
+
+    <!-- 付费观看 <view class="play-no-free-wrap" wx:if="{{visiteParam.vedioType == 0}}"> -->
+    <view class="play-no-free-wrap" wx:if="{{vedioLiveInfo.vedioType == 1&&!overTime}}">
+      <view class="play-no-free">
+        <image class="player-img" src='../../images/2.jpg'></image>
+        <view class="play-no-free-text-wrap">
+          <text class="play-no-free-text">直播内容</text>
+          <text class="play-no-free-title-text">付费后可在规定时间内多次观看</text>
+          <button class="play-no-free-btn" bindtap="bindPayButtonTap">付费观看</button>
+        </view>
+      </view>
+    </view>
+    <!-- 禁止观看 <view class="play-no-free-wrap" wx:if="{{visiteParam.vedioType == 0}}"> -->
+    <view class="play-no-free-wrap" wx:if="{{hospitalInfo[index].visitFlag ==1 && vedioLiveInfo.vedioType == 0&&!overTime}}">
+      <view class="play-no-free">
+        <image class="player-img" src='../../images/2.jpg'></image>
+        <view class="play-no-free-text-wrap">
+          <text class="play-no-free-text">直播 / 录播内容</text>
+          <text class="play-no-free-title-text">该床位禁止探视</text>
+        </view>
+      </view>
+    </view>
+    <!-- 无视频观看 -->
+    <view class="play-no-free-wrap" wx:if="{{visiteParam.vedioType == -1&&!overTime}}">
+      <view class="play-no-vedio-text">
+        <text>提示：请您现在"我的"一栏登录，方可观看视频</text>
+      </view>
+      <view class="play-no-vedio-text">
+        <text>提示：您的账号未绑定床位，请联系现场医生并提供关联微信的手机号和妈妈姓名进行绑定</text>
+      </view>
+      <view class="play-no-free">
+        <image class="player-img" src='../../images/2.jpg'></image>
+        <view class="play-no-free-text-wrap">
+          <text class="play-no-free-text">直播 / 录播内容</text>
+          <button class="play-no-vedio-btn">无视频</button>
+        </view>
+      </view>
+    </view>
+    <!-- <image class="player-img" src='../../images/1.jpg'></image> -->
+  </view>
+</view>
+<view class="authorize-btn-wrap" wx:if="{{isDisable401}}">
+  <button class='button authorize-btn' bindtap="bindAuthorizeButtonTap" disabled='{{!isVedio||hospitalInfo[index].familyFlag==1}}'>
+    授权亲属观看
+  </button>
+</view>
+<view wx:if="{{isDisable401}}">
+  <checkbox-group bindchange="bindAgreeChange" class="player-checkbox-wrap">
+    <label class="weui-agree" for="weuiAgree">
+      <view class="weui-agree__text">
+        <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+        <view class="weui-agree__checkbox-icon">
+          <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+        </view>
+        免责说明
+      </view>
+    </label>
+  </checkbox-group>
+  <view class="rich-view-wrap">
+    <rich-text nodes="{{statementContent}}" class="rich-wrap"></rich-text>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+.containers {
+    background: #F2F2F2;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+
+
+.list {
+    width: 95vw;
+    box-sizing: border-box;
+    padding: 20rpx;
+    /* line-height: 60rpx; */
+    font-size: 32rpx;
+    color: #2C2C2C;
+    background: #fff;
+    border-radius: 10rpx;
+    margin: 20rpx auto;
+
+}
+
+.li {
+    margin-bottom: 10rpx;
+}
+
+.fi {
+
+    /* font-weight: 600; */
+    color: #000;
+    font-size: 34rpx;
+}
+
+.se {
+    color: #BDBDBD;
+    font-size: 30rpx;
+}

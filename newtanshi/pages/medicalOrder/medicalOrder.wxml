@@ -1,0 +1,9 @@
+<view class="containers">
+    <block wx:for="{{orderList}}" wx:key="index">
+        <view class="list" bind:tap="toDetails" data-content="{{item.messageContent}}" data-no="{{item.bedNo}}" data-phone="{{item.familyPhone}}" data-name="{{item.familyName}}" data-createTime="{{item.createTime}}" data-hospitalName="{{item.hospitalName}}">
+            <view class="li fi phone">手机号：{{item.familyPhone}}</view>
+            <view class="li se no">床位号：{{item.bedNo}}</view>
+            <view class="li se content">医嘱内容：{{item.content}}</view>
+        </view>
+    </block>
+</view>

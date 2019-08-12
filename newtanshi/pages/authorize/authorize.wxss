@@ -1,0 +1,55 @@
+.authorize-content-wrap {
+  
+}
+.authorize-content-tittle-wrap {
+  text-align: center;
+}
+.authorize-content-tittle {
+  font-size: 36rpx;
+  color:#f568a9;
+  font-weight: bold;
+}
+.auth-phone-wrap {
+  margin-top: 15px;
+  border: 1px solid #f0f0f0;
+}
+.auth-phone {
+  width: 160rpx;
+  color: #f568a9;
+}
+.auth-phone-wrap:before {
+  border-top: none;
+}
+.auth-phone-input {
+  color: #808080;
+}
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: none;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}
+.auth-flex-wrap {
+  margin-top:6px;
+}
+.button-color{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  color:#fff;
+  background: #f568a9;
+  padding: 0;
+}
+.auth-flex-item {
+  padding: 0;
+}
+
+.valid-error {
+  color: #f568a9;
+  font-size: 30rpx;
+  text-align: center;
+  margin-top:10px;
+}

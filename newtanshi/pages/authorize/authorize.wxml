@@ -1,0 +1,18 @@
+<view class="authorize-content-wrap">
+<view class="authorize-content-tittle-wrap">
+<text class="authorize-content-tittle">授权亲属信息填写</text>
+</view>
+<view class="weui-cell weui-cell_input weui-cell_vcode auth-phone-wrap">
+    <view class="weui-cell__hd">
+        <view class="weui-label auth-phone" bindinput ="mobileInput">手机号：</view>
+    </view>
+    <view class="weui-cell__bd">
+        <input class="weui-input auth-phone-input" value='{{inputValue}}' placeholder="请输入手机号" bindinput ="mobileInput"/>
+    </view>
+</view>
+<view class="valid-error" wx:if="{{isShowTip}}">{{tipMsg}}</view>
+<view class="weui-flex auth-flex-wrap">
+      <view class="weui-flex__item"><view class="placeholder auth-flex-item"><button class='button button-color' bindtap="bindButtonCannel">取消</button></view></view>
+      <view class="weui-flex__item"><view class="placeholder auth-flex-item"><button class='button button-color' bindtap="bindButtonSure">确认</button></view></view>
+  </view>
+</view>

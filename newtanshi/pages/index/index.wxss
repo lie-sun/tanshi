@@ -1,0 +1,113 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.index-panel-header {
+  height: 90px;
+  border-bottom: 4px solid rgb(207, 207, 207);
+}
+
+.index-panel-title {
+  color: #000;
+}
+
+.index-cell-wrap::before {
+  border-top: none;
+}
+
+.weui-cell_access .index-cell-access:after {
+  border-color: #919191;
+}
+
+.index-cell-text {
+  font-size: 32rpx;
+  color: #555;
+  font-weight: bold;
+  font-family: SimSun;
+}
+
+.index-click-btn-wrap {
+  height: 90px;
+  width: 100%;
+  text-align: center;
+}
+
+.index-click-wrap {
+  text-align: center;
+  width: 300rpx;
+  font-size: 32rpx;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 2px;
+  border-radius: 6px;
+  transform: translate(70%, 90%);
+}
+
+.family-text-tip {
+  margin-left: 4px;
+}
+
+.unlog-text-wrap {
+  margin-top: 40%;
+  text-align: center;
+}
+
+.unlog-text {
+  font-size: 30rpx;
+}
+
+.index-panel-header1 {
+  height: 90px;
+  background: #f568a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-click-wrap1 {
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+  width: 280rpx;
+  padding: 6px 0;
+  border: 1px solid #eb5c9e;
+  background: #f17cb3;
+  border-radius: 4px;
+}
+
+.weui-cell {
+  padding: 30px 15px 10px 15px;
+}
+
+.pot {
+  position: relative;
+}
+
+.red {
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background: #f00;
+  top: 50rpx;
+  right:35rpx;
+}

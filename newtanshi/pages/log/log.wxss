@@ -1,0 +1,56 @@
+
+.illustrate-content-wrap {
+  
+}
+.illustrate-header-tittle {
+   color:#000;
+   font-size: 34rpx;
+   text-align: center;
+}
+.log-list-item-wrap {
+  padding: 10px;
+}
+
+.log-list-item {
+  text-align: center;
+  font-size: 30rpx;
+  color:#999;
+}
+.log-list-item {
+  
+}
+.active-item {
+  margin: 40rpx 0;
+  background: #f568a9;
+  color: #fff;
+  border-radius: 10px;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.back-btn-wrap{
+  float:left;
+width:83rpx;
+height:69rpx;
+
+}
+.back-btn{
+  display: inline-block;
+  
+  width: 20rpx;
+  height: 20rpx;
+  border-left: 2px solid #999;
+  border-top: 2px solid #999;
+  transform: rotate(-45deg);
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.tips{
+  font-size: 30rpx;
+  margin-left: 20px;
+}
+.tips text{
+  color: rgb(85, 82, 82);
+  display: block;
+}
+
+

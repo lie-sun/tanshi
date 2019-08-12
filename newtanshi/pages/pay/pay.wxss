@@ -1,0 +1,41 @@
+.illustrate-content-wrap {
+  margin-top: 60rpx;
+}
+.illustrate-header-wrap{
+  margin-bottom: 30rpx;
+}
+.illustrate-header-tittle {
+   color:#000;
+   font-size: 34rpx;
+   text-align: center;
+   font-weight: bold;
+}
+.log-list-item-wrap {
+  padding: 10px;
+}
+
+.log-list-item {
+  text-align: center;
+  font-size: 30rpx;
+  color:#999;
+}
+.log-list-item {
+  margin-top: 10px;
+}
+.active-item {
+  background: #f568a9;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.pay-wrap {
+  color: #f568a9;
+  text-align: center;
+  font-size: 60rpx;
+  margin-bottom: 30rpx;
+}
+.pay-tip-wrap {
+  font-size: 28rpx;
+  text-align: center;
+  color: #999;
+}

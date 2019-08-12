@@ -1,0 +1,29 @@
+
+<view class="myauth-title" wx:if="{{familyFlag==0}}">我的授权</view>
+<view wx:if="{{authorizeListArray.length!=0}}">
+<view class="myauth-phone-wrap" wx:for="{{authorizeListArray}}" wx:for-index="index" wx:key="index">
+  <view class="myauth-phone">授权给<text class="myauth-phone-text">{{item.familyPhone}}</text></view>
+  <view class="myauth-text">床位 {{item.bedNo}}</view>
+  <view class="myauth-close" bindtap="openConfirm" data-item="{{item}}">×</view>
+</view>
+</view>
+<view wx:if="{{authorizeListArray.length==0&&familyFlag==0}}">
+<view class="myauth-phone-wrap">
+  <view class="myauth-phone"><text class="myauth-phone-text">暂无授权数据</text></view>
+</view>
+</view>
+
+
+<view class="myauth-title">授权给我</view>
+<view wx:if="{{beauthorizeArray.length!=0}}">
+<view class="myauth-phone-wrap" wx:for="{{beauthorizeArray}}" wx:for-index="index" wx:key="index">
+  <view class="myauth-phone">授权人<text class="myauth-phone-text">{{item.familyPhone}}</text></view>
+  <view class="myauth-text">床位 {{item.bedNo}}</view>
+  <!--<view class="myauth-vedio-btn" data-id="{{item}}" bindtap="bindButtonCheckVisit">查看视频</view>-->
+</view>
+</view>
+<view wx:if="{{beauthorizeArray.length==0}}">
+<view class="myauth-phone-wrap">
+  <view class="myauth-phone"><text class="myauth-phone-text">暂无被授权数据</text></view>
+</view>
+</view>

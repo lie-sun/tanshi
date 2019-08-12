@@ -1,0 +1,22 @@
+.containers {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 40rpx;
+    font-size: 34rpx;
+}
+
+.li {
+    margin: 10rpx 0;
+}
+
+.content {
+    margin-top: 45rpx;
+}
+
+.rr {
+    text-align: right;
+}
+
+.time {
+    margin-top: 50rpx;
+}
